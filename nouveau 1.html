@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Auteur - [Ton Nom]</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #1d1d1d;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e2e2e;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #FFD700;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: #f4f4f4;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .book {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .book img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .book div {
+            flex: 1;
+        }
+        .book h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #FFD700;
+        }
+        .book p {
+            margin: 10px 0;
+        }
+        .book a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #FFD700;
+            color: #1d1d1d;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .book a:hover {
+            background-color: #e6c200;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e2e2e;
+            color: #f4f4f4;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[Ton Nom]</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#mes-livres">Mes Livres</a>
+            <a href="#a-propos">À Propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="accueil">
+        <h2>Bienvenue dans mon univers</h2>
+        <p>Plongez dans des aventures épiques et des récits captivants.</p>
+    </div>
+
+    <section id="mes-livres">
+        <h2>Mes Livres</h2>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Couverture Livre">
+            <div>
+                <h3>Titre du Livre 1</h3>
+                <p>Résumé court du livre. Découvrez l'histoire fantastique qui vous tiendra en haleine.</p>
+                <a href="#">Acheter</a>
+            </div>
+        </div>
+        <div class="book">
+            <img src="https://via.placeholder.com/150" alt="Couverture Livre">
+            <div>
+                <h3>Titre du Livre 2</h3>
+                <p>Résumé court du livre. Une aventure pleine de rebondissements et de mystères.</p>
+                <a href="#">Acheter</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos">
+        <h2>À Propos</h2>
+        <p>Je suis [Ton Nom], passionné(e) d'écriture et créateur/trice de mondes fantastiques. Mes romans explorent les thèmes de l'aventure, de l'amour et des défis épiques. J'écris pour transporter mes lecteurs dans des univers où tout est possible.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Pour me contacter, envoyez-moi un message via ce formulaire :</p>
+        <form>
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Ton Nom] - Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
